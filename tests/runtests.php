@@ -11,6 +11,11 @@
 
 set_time_limit( 0 );
 
+#set_include_path(get_include_path() . PATH_SEPARATOR . '/Users/pek/workspace/phpunit/dbunit' . PATH_SEPARATOR .
+#                 '/Users/pek/workspace/phpunit/phpunit' . PATH_SEPARATOR . 
+#                 '/Users/pek/workspace/phpunit/php-file-iterator' . PATH_SEPARATOR . 
+#                 '/Users/pek/workspace/phpunit/php-code-coverage'  );
+
 require_once 'autoload.php';
 require_once 'PHPUnit/Autoload.php';
 
@@ -59,9 +64,9 @@ if ( version_compare( $version, '3.5.0' ) == -1 && $version !== '@package_versio
     die( "PHPUnit 3.5.0 (or later) is required to run this test suite.\n" );
 }
 
-require_once 'PHP/CodeCoverage.php';
-$codeCoverage = new PHP_CodeCoverage;
-$codeCoverage->filter()->addFileToBlacklist( __FILE__, 'PHPUNIT' );
+#require_once 'PHP/CodeCoverage.php';
+#$codeCoverage = new PHP_CodeCoverage;
+#$codeCoverage->filter()->addFileToBlacklist( __FILE__, 'PHPUNIT' );
 
 //require_once 'bootstrap.php';
 

@@ -368,6 +368,9 @@ EOT;
         unset($this->arguments['test']);
         unset($this->arguments['testFile']);
 
+        // test
+        $suite = new eZFindTestSuite();
+        
         try {
             $result = $runner->doRun($suite, $this->arguments);
         }

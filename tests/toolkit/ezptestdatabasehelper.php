@@ -64,7 +64,7 @@ class ezpTestDatabaseHelper
             $relations = $db->relationList( $type );
             foreach( $relations as $relation )
             {
-                $db->removeRelation( $relation, $type );
+                //$db->removeRelation( $relation, $type );
             }
         }
     }
